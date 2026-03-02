@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: rgb(1, 1, 57);
+            perspective: 1000px;
+           
+        }
+        .card{
+            height: 300px;
+            width: 250px;
+            background: linear-gradient(pink, magenta);
+            border-radius: 20px;
+            box-shadow: 0px 20px 20px black;
+            transition: .2s;
+            transform: rotateY(20deg);
+
+        }
+
+    </style>
+</head>
+<body onmousemove="rotatecard(event)">
+    <div class="card" id="card"></div>
+
+    <script>
+        function rotatecard(e){
+            const card = document.getElementById("card");
+            let xAxis =(window.innerWidth/2 - e.pageX)/20;
+            let yAxis =(window.innerHeight/2 - e.pageY)/20;
+
+            card.style.transform = "rotateY(" + xAxis + "deg) rotateX(" + yAxis +"deg)";
+
+        }
+    </script>
+</body>
+</html>
