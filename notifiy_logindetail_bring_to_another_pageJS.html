@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-śscale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="user" placeholder="Enter user name">
+    <input type="password" id="pass" placeholder="Enter Password">
+
+    <button onclick="vs()">LOG IN</button>
+
+    <script>
+        
+        function vs(){
+            var u = document.getElementById("user").value;
+            var p = document.getElementById("pass").value;
+
+            localStorage.setItem("username", "shivangi")
+            localStorage.setItem("password", "1234")
+    
+            var lusername = localStorage.getItem("username")
+            var lpassword = localStorage.getItem("password")
+
+            if (u === lusername && p === lpassword )  {
+                window.location.href = 'hack.html'
+            }else{
+                alert("Wrong Data..")
+            }
+        }
+    </script>
+</body>
+</html>
