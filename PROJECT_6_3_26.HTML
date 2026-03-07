@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            box-sizing: border-box;
+        }
+       
+        #bridalmainpage{
+            height: 100vh;
+            width: 100vw;
+
+        }
+        #developer{
+            position: absolute;
+            top: 0px;
+            color: white;
+            font-weight: bolder;
+        }
+        #title{
+            position: absolute;
+            top: 150px;
+            left: 200px;
+            color: white;
+        }
+        #discription {
+            position: absolute;
+            color: white;
+            left: 200px;
+            top: 250px;
+        }
+        #shop{
+            position: absolute;
+            top: 350px;
+            left: 200px;
+            background: transparent;
+            padding: 10px;
+            color: rgb(173, 113, 1);
+            border: 1px solid rgb(117, 76, 1);
+            border-radius: 10px;
+            width: 10%;
+        }
+        #shop:hover{
+            background: rgba(175, 120, 18, 0.046);
+            color: rgb(239, 213, 169);
+        }
+        #producttitle{
+            text-align: center;
+            margin-top: 50px;
+        }
+        .secondpage{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+        }
+        .product {
+            background: gainsboro;
+            height: 230px;
+            width: 200px;
+            padding: 20px;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .product img{
+            height: 70%;
+            width: 70%;
+        }
+        #new{
+             display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.793);
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 3px;
+        }
+        #productlist{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        #price{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        span{
+            color: rgb(148, 0, 0);
+        }
+        #viewallproduct{
+            width: 15%;
+            background: rgb(238, 163, 112);
+            color: white;
+            padding: 5px;
+            border: none;
+            border-radius: 3px;
+        }
+        #secondpagebtn{
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .card{
+            margin: 100px 100px;
+            height: 300px;
+            width: 60%;
+            position: relative;
+            margin-left: 20%;
+            display: flex;
+            gap: 30px;
+        }
+        .back{
+            position: absolute;
+            left: -20px;
+            top: -20px;
+            height: 300px;
+            width: 300px;
+            background: #000;
+        }
+        .card img{
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+        #readmore{
+            margin-top: 20px;
+            width: 25%;
+            background: rgb(238, 163, 112);
+            color: white;
+            padding: 5px;
+            border: none;
+            border-radius: 3px;
+        }
+
+    </style>
+</head>
+<body>
+    <img id="bridalmainpage" src="image/bridal.jpg" alt="">
+
+    <div class="details">
+        <h3 id="developer">SHIVANGI'S JWELLERY</h3>
+        <h1 id="title">Best Jwellery <br> Collection</h1>
+        <p id="discription"> Lorem ipsum dolor sit amet consectetur  adipisicing elit. Natus odio ex quis sint <br> rem officia dolor dignissimos dicta mollitia  ea ehms feuhn Lorem <br> ipsum dolor sit amet consectetur..</p>
+        <button id="shop">Shop Now</button>
+    </div>
+
+    <h1 id="producttitle">LATEST PRODUCTS</h1>
+    <div class="secondpage">
+        <div class="product">
+            <img src="image/p1.png" alt="">
+            <div id="new">New</div>
+            <div id="productlist">Necklace</div>
+            <div id="price">Price <span>$200</span></div>
+        </div>
+        <div class="product">
+            <img src="image/p2.png" alt="">
+            <div id="new">New</div>
+             <div id="productlist">Necklace</div>
+            <div id="price">Price <span>$300</span></div>
+        </div>
+        <div class="product">
+            <img src="image/p3.png" alt="">
+            <div id="new">New</div>
+            <div id="productlist">Necklace</div>
+            <div id="price">Price <span>$110</span></div>
+        </div>
+        <div class="product"><img src="image/p4.png" alt=""><div id="new">New</div>
+             <div id="productlist">Ring</div>
+            <div id="price">Price <span>$45</span></div>
+        </div>
+        <div class="product"><img src="image/p5.png" alt=""><div id="new">New</div>
+             <div id="productlist">Ring</div>
+            <div id="price">Price <span>$95</span></div>
+        </div>
+        <div class="product"><img src="image/p6.png" alt=""><div id="new">New</div>
+             <div id="productlist">Earrings</div>
+            <div id="price">Price <span>$70</span></div>
+        </div>
+        <div class="product"><img src="image/p7.png" alt=""><div id="new">New</div>
+            <div id="productlist">Earrings</div>
+            <div id="price">Price <span>$400</span></div>
+        </div>
+        <div class="product"><img src="image/p8.png" alt=""><div id="new">New</div>
+             <div id="productlist">Necklace</div>
+            <div id="price">Price <span>$450</span></div>
+        </div>
+    </div>
+    <div id="secondpagebtn">
+        <button id="viewallproduct">View All Products</button>
+    </div>
+
+    <div class="thirdpage">
+        
+        <div class="card">
+            <div class="back"></div> 
+            <img src="image/about-img.jpg" alt="">
+            <div class="abouttext">
+                <h2>ABOUT US</h2>
+                <p>Welcome to Shivangi’s Jewellery! We create beautiful handmade pieces that bring tradition and elegance together. Our mission is to offer unique
+                designs that make every moment special.</p>
+                <button id="readmore">Read More</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
